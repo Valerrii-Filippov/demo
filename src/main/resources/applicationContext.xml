@@ -1,0 +1,39 @@
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--       http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+
+<!--    <bean id="starter" class="com.example.demo.Starter" />-->
+<!--    <bean id="wheel" class="com.example.demo.Wheel"/>-->
+<!--    <bean id="sparkPlug" class="com.example.demo.SparkPlug"/>-->
+<!--    <bean id="engine" class="com.example.demo.Engine">-->
+<!--        <constructor-arg ref="starter"/>-->
+<!--        <constructor-arg ref="sparkPlug"/>-->
+<!--    </bean>-->
+<!--    <bean id="accumulator" class="com.example.demo.Accumulator"/>-->
+<!--    <bean id="hinge" class="com.example.demo.Hinge"/>-->
+<!--    <bean id="differential" class="com.example.demo.Differential"/>-->
+<!--    <bean id="suspension" class="com.example.demo.Suspension">-->
+<!--        <constructor-arg ref="hinge"/>-->
+<!--        <constructor-arg ref="differential"/>-->
+<!--    </bean>-->
+<!--    <bean id="car" class="com.example.demo.Car">-->
+<!--        <constructor-arg ref="wheel"/>-->
+<!--        <constructor-arg ref="engine"/>-->
+<!--        <constructor-arg ref="accumulator"/>-->
+<!--        <constructor-arg ref="suspension"/>-->
+<!--    </bean>-->
+<!--</beans>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <context:component-scan base-package="com.example.demo"/>
+
+</beans>
